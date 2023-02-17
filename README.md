@@ -32,7 +32,7 @@ Medicine information:
 
 ### Add product module
 The " Adding new product module” is mainly responsible for adding the newly coming drug " quantity-wise " with referral to the reference number and lot number to specify the needed product, functions such as: Add, Update, Clear and Delete are included in the module. whereas:
-# Add: Enters a newly arriving product to the system’s dataset..
+* Add: Enters a newly arriving product to the system’s dataset..
 * Update: Updates the name, lot, and referral numbers of the products in the system for a pre-existing product.
 * Clear: Clear the entered data from the boxes whiteout adding.
 * Delete: Delete an existing product.
@@ -60,27 +60,68 @@ The patient has one method to pay with "cash”.
 
 ### Activity diagram 
 
-![activity drawio](https://user-images.githubusercontent.com/101527083/219721939-aab91948-65db-4b56-ab79-77669657e1f5.png)
+![activity drawio](https://user-images.githubusercontent.com/101527083/219741572-7ba34e30-e74c-42e1-aa46-1f34c67a47ea.png)
+
+![activity](https://user-images.githubusercontent.com/101527083/219741581-6cc95b76-64a8-4d59-895a-134006ffd580.PNG)
 
 
-#### Use cases diagram 
+### Use cases diagram 
 
 ![use-case](https://user-images.githubusercontent.com/101527083/219722227-8e80d135-da16-44a5-9022-c637ad4fd4c6.png)
 
 
-#### Class diagram based on activity diagram and use cases 
+### Class diagram based on activity diagram and use cases 
 
 ![Capture](https://user-images.githubusercontent.com/101527083/219723734-4f5925b2-2efb-4e77-876a-7382974e8c70.PNG)
 
-#### Class diagram based on interaction diagrams based on (sequence diagram and collaboration — communication — diagram)
+### Class diagram based on interaction diagrams based on (sequence diagram and collaboration — communication — diagram)
 
-#### Object diagram 
+![image](https://user-images.githubusercontent.com/101527083/219741951-77ebe1e6-b08d-47c9-8c98-455b3a34849b.png)
+
+
+### Object diagram 
 ![Object](https://user-images.githubusercontent.com/101527083/219724398-120727db-c1da-4153-bebe-17e666379158.jpeg)
+
+### state machince diagram 
+![STATE DIAGRAM png](https://user-images.githubusercontent.com/101527083/219739906-eda7e2e7-1768-4edb-8f31-5c4de1267809.png)
+
+![STATE DIAGRAM drawio (1)](https://user-images.githubusercontent.com/101527083/219739968-485ebb80-4e29-46ac-a169-2352b81c2dd9.png)
+
+![STATE DIAGRAM drawio (2)](https://user-images.githubusercontent.com/101527083/219740003-7fe6c179-8023-453f-aa2b-fd8adc7f7aab.png)
+
+### Package diagram 
+
+![image](https://user-images.githubusercontent.com/101527083/219742123-7260d782-d1a3-4314-bae4-df315cebb800.png)
+
+
+### Deployment diagram 
+
+![image](https://user-images.githubusercontent.com/101527083/219742294-4ad9ce5b-99b1-43a7-83ae-ed2c55c2577d.png)
+
+### Database with SQL Server 
+The database was collected manually with credits was earned by Dr. pharmacy in Borg Al-Arab City 
+
+![image](https://user-images.githubusercontent.com/101527083/219743165-24c0ba77-8cf4-480c-93b3-a4bce6753652.png)
+
+![image](https://user-images.githubusercontent.com/101527083/219743430-cea7dc94-1040-4264-92ea-6d42745b6e7b.png)
+
+
+
+### ER diagram 
+
+![image](https://user-images.githubusercontent.com/101527083/219743677-4cf34e6f-2bb9-4936-838b-6764ce3ff856.png)
+
 
 #### System desktop interface and login page (Tkinter)
 
+![image](https://user-images.githubusercontent.com/101527083/219742921-edb35176-f63f-4a30-bf9a-0ffc72fe7269.png)
+
 
 ### System website interface (HTML,CSS, JavaScript)
+
+![image](https://user-images.githubusercontent.com/101527083/219742684-146d5d8e-2e7a-4c37-a75a-376bb5408997.png)
+
+![image](https://user-images.githubusercontent.com/101527083/219742785-ec6dc786-e1bf-4c02-a6fe-0515307d1d54.png)
 
 
 
