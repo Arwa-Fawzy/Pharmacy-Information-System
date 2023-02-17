@@ -13,7 +13,7 @@ root.resizable (False,False)
  
 # add the logo here ya arwa 
  
-img = PhotoImage(file = 'D:/CS/3rd/software-engineering/project/coding/Pharmacy_management-system-master/logo.png')
+img = PhotoImage(file = './logo.png')
 Label(root,image = img ,bg='white').place(x=50,y=50)
 frame = Frame(root,width=350,height=350,bg='white')
 frame.place(x=480,y=70)
