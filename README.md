@@ -14,7 +14,7 @@ The system architecture discusses the developed system’s modules and the under
 Information display module, Add product module, Search module, Payment module.
 
 ### Information display module 
-The " Information display module " is carries out the functions necessary to display important information about the desired product Including some of the vital data such as the reference number to check its availability, the lot number to track any faulty drug patches in the pharmacy and other important details such as the issue date, expiry date and the usage details, in order to enhance the pharmacist/patient relation and help pharmacist know the patient's needs better and give the patient the best service.
+The " Information display module " carries out the functions necessary to display important information about the desired product Including some of the vital data such as the reference number to check its availability, the lot number to track any faulty drug patches in the pharmacy and other important details such as the issue date, expiry date and the usage details, in order to enhance the pharmacist/patient relation and help pharmacist know the patient's needs better and give the patient the best service.
 Medicine information:
 * Medicine name
 * Reference number: the medicine's code on the system in order to be found/handled throughout the process to check for its availability and quantity
