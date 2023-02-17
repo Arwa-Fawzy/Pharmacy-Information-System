@@ -15,7 +15,7 @@ class Pharmacy:
         self.root.title("Pharm.B (Pharmacy Builder)")
         self.root.geometry("1350x800+0+0")
         self.root.resizable(False, False)
-        self.root.iconbitmap(r"D:/CS/3rd/software-engineering/project/coding/Pharmacy_management-system-master/image/doc.ico")
+        self.root.iconbitmap(r"./doc.ico")
 
         
         self.ref_variable = StringVar()
@@ -51,7 +51,7 @@ class Pharmacy:
         self.heading_color()
 
         #logo label text style 
-        img1 = Image.open(r"D:/CS/3rd/software-engineering/project/coding/Pharmacy_management-system-master/image/logo.png")
+        img1 = Image.open(r"./logo.png")
         img1 = img1.resize((70, 45), Image.ANTIALIAS)
         self.photoimg1 = ImageTk.PhotoImage(img1)
         b1 = Button(self.root, image=self.photoimg1,
@@ -123,7 +123,7 @@ class Pharmacy:
             "times new roman", 13, "bold"), bg="dodgerblue4",fg='white')
         ref_label.grid(row=0, column=0, sticky=W)
 
-        conn = sqlite3.connect(database=r'D:/CS/3rd/software-engineering/project/coding/Pharmacy_management-system-master/pharmacy.db')
+        conn = sqlite3.connect(database=r'./pharmacy.db')
         my_cursor = conn.cursor()
         my_cursor.execute("Select Ref_no from pharma")
         row_01 = my_cursor.fetchall()
@@ -162,7 +162,7 @@ class Pharmacy:
             "times new roman", 13, "bold"), bg="dodgerblue4",fg='white')
         medname_label.grid(row=3, column=0, sticky=W)
 
-        conn = sqlite3.connect(database=r'D:/CS/3rd/software-engineering/project/coding/Pharmacy_management-system-master/pharmacy.db')
+        conn = sqlite3.connect(database=r'./pharmacy.db')
         my_cursor = conn.cursor()
         my_cursor.execute("Select Med_name from pharma")
         row_02 = my_cursor.fetchall()
@@ -266,7 +266,7 @@ class Pharmacy:
         #inserting some images in the left frame
    
         # image 
-        self.bgg = ImageTk.PhotoImage(file=r"D:/CS/3rd/software-engineering/project/coding/Pharmacy_management-system-master/image/medi.png")
+        self.bgg = ImageTk.PhotoImage(file=r"./max.png")
         lbl_bgg = Label(left_smallframe, image=self.bgg)
         lbl_bgg.place(x=380, y=100, width=390, height=210)
 
@@ -280,7 +280,7 @@ class Pharmacy:
           # image & label
 
         # image 
-        self.bg1 = ImageTk.PhotoImage(file=r"D:/CS/3rd/software-engineering/project/coding/Pharmacy_management-system-master/image/co.jpeg")
+        self.bg1 = ImageTk.PhotoImage(file=r"./imggg.jpeg")
         lbl_bg1 = Label(right_frame, image=self.bg1)
         lbl_bg1.place(x=0, y=0, width=420, height=100)
 
@@ -421,7 +421,7 @@ class Pharmacy:
             if password!="arwa123":
                     messagebox.showinfo("info", "Password wrong! You are not the doctor!!")
             else:
-                conn = sqlite3.connect(database=r'D:/CS/3rd/software-engineering/project/coding/Pharmacy_management-system-master/pharmacy.db')
+                conn = sqlite3.connect(database=r'./database.sql')
                 my_cursor = conn.cursor()
                 my_cursor.execute("Insert into pharma(Ref_no,Med_name) values(?,?)", (
                     self.ref_variable.get(),
@@ -434,7 +434,7 @@ class Pharmacy:
                 messagebox.showinfo("Success", "MEDICINE ADDED")
 
     def fetch_datamed(self):
-        conn = sqlite3.connect(database=r'D:/CS/3rd/software-engineering/project/coding/Pharmacy_management-system-master/pharmacy.db')
+        conn = sqlite3.connect(database=r'./database.sql')
         my_cursor = conn.cursor()
         my_cursor.execute("select * from pharma")
         rows = my_cursor.fetchall()
@@ -464,7 +464,7 @@ class Pharmacy:
             messagebox.showerror("Error", "Ref No. and med name is required")
         else:
             try:
-                conn = sqlite3.connect(database=r'D:/CS/3rd/software-engineering/project/coding/Pharmacy_management-system-master/pharmacy.db')
+                conn = sqlite3.connect(database=r'./database.sql')
                 my_cursor = conn.cursor()
 
                 my_cursor.execute("Update pharma set Med_name=? where Ref_no=?", (
@@ -517,7 +517,7 @@ class Pharmacy:
             
             
             try:
-                conn=sqlite3.connect(database=r'D:/CS/3rd/software-engineering/project/coding/Pharmacy_management-system-master/pharmacy.db')
+                conn=sqlite3.connect(database=r'./database.sql')
                 my_cursor=conn.cursor()
             
                 my_cursor.execute("Delete from pharma where Ref_no=? ",(self.ref_variable.get(),))
@@ -546,7 +546,7 @@ class Pharmacy:
         if self.refno_var.get() == "" or self.lotno_var.get() == "" or self.typemed_var.get() == "":
             messagebox.showerror("Error","All fields are required")
         else:
-            conn=sqlite3.connect(database=r'D:/CS/3rd/software-engineering/project/coding/Pharmacy_management-system-master/pharmacy.db')
+            conn=sqlite3.connect(database=r'./database.sql')
             new_cursor=conn.cursor()
             new_cursor.execute("Insert into Information(REF_NO,COMPANY_NAME,TYPE_OF_MED,MED_NAME,LOT_NO,ISSUE_DT,EXP_DT,USES,SIDE_EFFECT,PRECAUTION,DOSAGE,PRICE,QUANTITY) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",(
                                                                                                
@@ -570,7 +570,7 @@ class Pharmacy:
             messagebox.showinfo("Success","Successfully added")
 
     def fetch_new(self):
-        conn=sqlite3.connect(database=r'D:/CS/3rd/software-engineering/project/coding/Pharmacy_management-system-master/pharmacy.db')
+        conn=sqlite3.connect(database=r'./database.sql')
         new_cursor=conn.cursor()
         new_cursor.execute("select * from Information")
         row=new_cursor.fetchall()
@@ -607,7 +607,7 @@ class Pharmacy:
         if self.refno_var.get() == "" or self.lotno_var.get() == "" or self.typemed_var.get() == "":
             messagebox.showerror("Error","All fields are required")
         else:
-            conn=sqlite3.connect(database=r'D:/CS/3rd/software-engineering/project/coding/Pharmacy_management-system-master/pharmacy.db')
+            conn=sqlite3.connect(database=r'./database.sql')
             new_cursor=conn.cursor()
             new_cursor.execute("Update Information set COMPANY_NAME=?,TYPE_OF_MED=?,MEDNAME=?,LOT_NO=?,ISSUE_DT=?,EXP_DT=?,USES=?,SIDE_EFFECT=?,PRECAUTION=?,DOSAGE=?,PRICE=?,QUANTITY=? where REF_NO=?",(
                                                                                                
@@ -650,7 +650,7 @@ class Pharmacy:
 
     def search_data(self):
 
-        conn=sqlite3.connect(database=r'D:/CS/3rd/software-engineering/project/coding/Pharmacy_management-system-master/pharmacy.db')
+        conn=sqlite3.connect(database=r'./database.sql')
         new_cursor=conn.cursor()
         selected = self.search_combo.get()
         if selected == "Select Options":
@@ -667,34 +667,6 @@ class Pharmacy:
                     self.info_table.insert("",END,values=i)
 
                 conn.commit()
-        
-
-        
-
-            
-            
-
-    
-        
-
-        
-
-    
-
-
-        
-        
-
-
-
-
-
-
-
-
-
-
-
 
     def slider(self):
         if self.count>=len(self.txt):
@@ -710,12 +682,7 @@ class Pharmacy:
         fg=random.choice(self.color)
         self.heading.config(fg=fg)
         self.heading.after(100,self.heading_color)
-    
-
-
-
-
-
+  
 
 
 
