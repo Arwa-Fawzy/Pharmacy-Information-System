@@ -99,7 +99,7 @@ The patient has one method to pay with "cash”.
 ![image](https://user-images.githubusercontent.com/101527083/219742294-4ad9ce5b-99b1-43a7-83ae-ed2c55c2577d.png)
 
 ### Database with SQL Server 
-The database was collected manually with credits was earned by Dr. pharmacy in Borg Al-Arab City, Egypt. 
+The database was collected manually with credits was earned by Dr. Ahmed yahia pharmacy in Borg Al-Arab City, Egypt. 
 
 ![image](https://user-images.githubusercontent.com/101527083/219745510-e43d2994-db6a-4eca-811f-107e6e2b0c50.png)
 
