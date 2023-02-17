@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharm.B</title>
+    <link rel="stylesheet" href="css/adminStyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Pharm.B System</div>
+        <div class="content">
+        <form action="#">
+            <div class="product-details">
+                <div class="input-box">
+                    <span class="details">Ref No.</span>
+                    <select name="ref-no" id="ref-no">
+                        <option value="100">101</option>
+                        <option value="101">101</option>
+                        <option value="102">102</option>
+                        <option value="103">103</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <span class="details" >Company Name</span>
+                    <input type="text" placeholder="Company name"> 
+                </div>
+                    <div class="input-box">
+                        <span class="details">Type of product</span>
+                        <select name="product-type" id="product-type">
+                            <option value="liquid">Liquid</option>
+                            <option value="tablet">Tablet</option>
+                            <option value="tablet-box">Tablet box</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Product name</span>
+                        <select name="product-name" id="product-name">
+                            <option value="paracetamol">Paracetamol</option>
+                            <option value="revo">Revo</option>
+                            <option value="panadol">Panadol</option>
+                            <option value="head-and-shoulders">Head & Shoulders</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <span class="details" >Lot No.</span>
+                        <input type="text" placeholder="Lot No."> 
+                    </div>
+                    <div class="input-box">
+                        <span class="details" >Issue date</span>
+                        <input type="text" placeholder="Issue date"> 
+                    </div>
+                    <div class="input-box">
+                        <span class="details" >Expiry date</span>
+                        <input type="text" placeholder="Expiry date"> 
+                    </div>
+                    <div class="input-box">
+                        <span class="details" >Uses</span>
+                        <input type="text" placeholder="Company name"> 
+                    </div>
+                    <div class="input-box">
+                        <span class="details" >Side effect</span>
+                        <input type="text" placeholder="Company name"> 
+                    </div>
+                    <div class="input-box">
+                        <span class="details" >Warning</span>
+                        <input type="text" placeholder="Company name"> 
+                    </div>
+                    <div class="input-box">
+                        <span class="details" >Dosage</span>
+                        <input type="text" placeholder="Company name"> 
+                    </div>
+                    <div class="input-box">
+                        <span class="details" >Quantinty</span>
+                        <input type="text" placeholder="Company name"> 
+                    </div>
+                    <div class="input-box">
+                        <span class="details" >Total price</span>
+                        <input type="text" placeholder="Company name"> 
+                    </div>
+                    <div class="input-box">
+                        <span class="details" >Search</span>
+                        <input type="text" placeholder="Search here..." />
+                    </div>
+                    <div class="input-box">
+                        <span class="details">search option</span>
+                        <select name="search option" id="search-option">
+                            <option value="lot-no">Lot No.</option>
+                            <option value="ref-no">Reference No.</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <span class="details" >Click to search</span> 
+                        <button class="button">Search</button>
+                    </div>
+                    <div class="input-box">
+                        <!-- <span class="details" >Pay product</span> -->
+                        <button class="button">add product</button>
+                    </div>
+                    <div class="input-box">
+                        <!-- <span class="details" >Remove product</span> -->
+                        <button class="button">Remove</button>
+                    </div>
+                    <div class="input-box">
+                        <!-- <span class="details" >Click here to Search</span> -->
+                        <button class="button">update</button>
+                    </div>
+                    <div class="input-box">
+                        <!-- <span class="details" >Click here to Search</span> -->
+                        <button class="button">Reset</button>
+                    </div>
+            </div>
+    </form>
+    <div class="container2">
+
+        <table>
+            <thead>
+                <td>Ref.No</td>
+                <td>Company Name</td>
+                <td>Type of product</td>
+                <td>product Name</td>
+                <td>Lot No.</td>
+                <td>Issue date</td>
+                <td>Expiry date</td>
+                <td>Uses</td>
+                <td>Side effect</td>
+                <td>Warning</td>
+                <td>Dosage</td>
+                <td>Price</td>
+                <td>Quantinty</td>
+            </thead>
+            <tbody>
+                <td>101</td>
+                <td>Farko</td>
+                <td>tablet</td>
+                <td>paracetamol</td>
+                <td>6768997</td>
+                <td>16-7-2022</td>
+                <td>1-7-2025</td>
+                <td>bard</td>
+                <td>soda3</td>
+                <td>dont use it too much</td>
+                <td>3 days</td>
+                <td>10</td>
+                <td>2</td>
+            </tbody>
+            
+            <tfoot>
+                <td colspan="10">
+                    Total
+                </td>
+                <td colspan="2" class="price">
+                    150.0
+                </td>
+                <td>
+                    <div class="pay-box">
+                       
+                        <button class="button">Pay</button>
+                    </div>
+                </td>
+            </tfoot>
+            
+        </table>
+        
+    </div>
+
+    </div>
+    
+
+    </div>
+   
+</body>
+</html>
