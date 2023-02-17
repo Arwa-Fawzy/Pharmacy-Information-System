@@ -1,6 +1,86 @@
-# Pharmacy-Information-System
+# Pharm.B System (Builder of Pharmacy)
+Pharm.D is known as Doctor of pharmacy among all medicine universities. The pharmacy information system name and logo was inspired from this idea to simulate the database manegement system as Builder of Pharmacy as shown:
+
+![logo](https://user-images.githubusercontent.com/101527083/219718133-340b48a5-80e4-420f-a492-df5d4fb10c0f.png)
+
+### Aim
 Pharmacy management software, — Pharm.B (Pharmacy Builder) — is to store important information about medications and patients in a much simpler way to ensure that the right prescriptions are given out at the right dosage. Furthermore, this new system is meant to be a multi-functional system that allows pharmacists to store the patient’s information and perpetuate the supply and organization of drugs. The system stores the patient’s information to perceive the allergies of the patient and guarantees that no patient would be prescribed a medication that would cause them to suffer from an allergic reaction. Moreover, the system will be very secure, up-to-date, and accurate, this is in order to decrease medication errors, increase patient safety, report drug usage, and track costs. The team members plan on implementing all this by adding inventory tracking, prescription filling and processing (taking all the necessary steps that should be taken to evaluate a prescription, verify its medical importance, benefits or side effects), and point of sale to the system. These three functions are the primary functions of any pharmacy information system; however, we developed some enhancements to it, making pharmacists’ and patients’ life much simpler, faster, and safer. Additionally, we are planning on adding a new feature to our system. Eventually, the development platform is utterly formal and organized. It will be structured by HTML, CSS, JavaScript and Tkinter.
 
 ## PREFACE 
 This Software Requirement Specification (SRS) is intended for the pharmacy doctors ‘the admin of the system’ and pharmacists ‘the users’. This version of SRS covers the interface of release one of the Pharm-B (Builder of Pharmacy) system, which occurred at week 6 of the design process.
+
+### System Architecture 
+The system architecture discusses the developed system’s modules and the underlying functions within each. The system is divided into 4 main modules: 
+Information display module, Add product module, Search module, Payment module.
+
+#### Information display module 
+The " Information display module " is carries out the functions necessary to display important information about the desired product Including some of the vital data such as the reference number to check its availability, the lot number to track any faulty drug patches in the pharmacy and other important details such as the issue date, expiry date and the usage details, in order to enhance the pharmacist/patient relation and help pharmacist know the patient's needs better and give the patient the best service.
+Medicine information:
+• Medicine name
+• Reference number: the medicine's code on the system in order to be found/handled throughout the process to check for its availability and quantity.
+• Company name: It is vital to keep record of the company name from whom the pharmacy buys the drugs/who is responsible for those drugs.
+• Type of medicine: Specifies the form in which the medicine comes in (Liquid, Tablet or Capsules)
+• Lot number: the patch in which the drug came in to the pharmacy
+• Issue date: For it's a must for the pharmacy to record the day the drug is added to the pharmacy.
+• Expiry date: The expiry date is a crucial information for the pharmacist and the patient
+• Uses: It shows the pharmacist the health problems for which the medicine is mainly used for.
+• side effects
+• Precautions and warnings: Important precautions related to the dosage/ allergies etc.
+• Dosage: For the pharmacist to give the right dosage of the drug to the patient.
+• Price.
+• Quantity.
+
+#### Add product module
+The " Adding new product module” is mainly responsible for adding the newly coming drug " quantity-wise " with referral to the reference number and lot number to specify the needed product, functions such as: Add, Update, Clear and Delete are included in the module. whereas:
+• Add: Enters a newly arriving product to the system’s dataset..
+• Update: Updates the name, lot, and referral numbers of the products in the system for a pre-existing product.
+• Clear: Clear the entered data from the boxes whiteout adding.
+• Delete: Delete an existing product.
+
+#### Search module 
+This module is mainly responsible for handling the search process of drugs with multiple options to facilitate finding the required drug with reference to the expiry  date for example. It also helps with adding and removing information about the drugs. The most important functions used are:
+• Search: It searches for an entered drug name, referral number, or according to an option(s) selected from the “Search Options” function.
+• Search Options: It is used to find the needed drug through filtration process such as the expiry date, the company’s name, the lot number...etc.
+• Add Medicine: It allows the pharmacist to add a medicine to the system along with adding some required data about the drug in order to properly add it to the system.
+• Delete: It deletes a selected drug from the dataset.
+• Update: It updates the information of a specified drug on the dataset.
+• Show All: It shows the whole dataset for preview.
+• Exit: It exits the search process.
+
+#### Payment module 
+The patient has one method to pay with "cash”.
+
+#### The system architecture diagram 
+
+![image](https://user-images.githubusercontent.com/101527083/219721670-e7e7a402-e744-4025-bfcf-dc561c70d1f2.png)
+
+
+![System Architecture](https://user-images.githubusercontent.com/101527083/219721055-397ce5bb-15c2-4239-949a-7ef421846730.PNG)
+
+
+###Activity diagram 
+
+![activity drawio](https://user-images.githubusercontent.com/101527083/219721939-aab91948-65db-4b56-ab79-77669657e1f5.png)
+
+
+#### Use cases diagram 
+
+![use-case](https://user-images.githubusercontent.com/101527083/219722227-8e80d135-da16-44a5-9022-c637ad4fd4c6.png)
+
+
+#### Class diagram based on activity diagram and use cases 
+
+![Capture](https://user-images.githubusercontent.com/101527083/219723734-4f5925b2-2efb-4e77-876a-7382974e8c70.PNG)
+
+#### Class diagram based on interaction diagrams based on (sequence diagram and collaboration — communication — diagram)
+
+#### Object diagram 
+![Object](https://user-images.githubusercontent.com/101527083/219724398-120727db-c1da-4153-bebe-17e666379158.jpeg)
+
+#### System desktop interface and login page (Tkinter)
+
+
+### System website interface (HTML,CSS, JavaScript)
+
+
 
