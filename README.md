@@ -99,11 +99,14 @@ The patient has one method to pay with "cash”.
 ![image](https://user-images.githubusercontent.com/101527083/219742294-4ad9ce5b-99b1-43a7-83ae-ed2c55c2577d.png)
 
 ### Database with SQL Server 
-The database was collected manually with credits was earned by Dr. pharmacy in Borg Al-Arab City 
+The database was collected manually with credits was earned by Dr. pharmacy in Borg Al-Arab City, Egypt. 
 
-![image](https://user-images.githubusercontent.com/101527083/219743165-24c0ba77-8cf4-480c-93b3-a4bce6753652.png)
+![image](https://user-images.githubusercontent.com/101527083/219745510-e43d2994-db6a-4eca-811f-107e6e2b0c50.png)
 
-![image](https://user-images.githubusercontent.com/101527083/219743430-cea7dc94-1040-4264-92ea-6d42745b6e7b.png)
+![image](https://user-images.githubusercontent.com/101527083/219746656-108a98f0-99cf-47e4-ad59-f32e6d51bc37.png)
+
+
+![image](https://user-images.githubusercontent.com/101527083/219745710-0e8e3202-e51e-47ad-bcfc-a0a16acd7067.png)
 
 
 
@@ -122,6 +125,9 @@ The database was collected manually with credits was earned by Dr. pharmacy in B
 ![image](https://user-images.githubusercontent.com/101527083/219742684-146d5d8e-2e7a-4c37-a75a-376bb5408997.png)
 
 ![image](https://user-images.githubusercontent.com/101527083/219742785-ec6dc786-e1bf-4c02-a6fe-0515307d1d54.png)
+
+
+
 
 
 
