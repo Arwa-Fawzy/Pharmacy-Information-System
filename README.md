@@ -9,6 +9,8 @@ Pharmacy management software, — Pharm.B (Pharmacy Builder) — is to store imp
 ## PREFACE 
 This Software Requirement Specification (SRS) is intended for the pharmacy doctors ‘the admin of the system’ and pharmacists ‘the users’. This version of SRS covers the interface of release one of the Pharm-B (Builder of Pharmacy) system, which occurred at week 6 of the design process.
 
+## UML (unified machine language)
+The system had UML (unified machine language) designs to simplfy the stalkholders' desire — the pharmacist and doctors — of each requirement they need. 
 ## System Architecture 
 The system architecture discusses the developed system’s modules and the underlying functions within each. The system is divided into 4 main modules: 
 Information display module, Add product module, Search module, Payment module.
@@ -51,6 +53,7 @@ This module is mainly responsible for handling the search process of drugs with 
 The patient has one method to pay with "cash”.
 
 ### The system architecture diagram 
+It divides the systems into sub modules as previously mentioned. It involves two parts: theoritical part and diagram attached with a table as shown. 
 
 ![image](https://user-images.githubusercontent.com/101527083/219721670-e7e7a402-e744-4025-bfcf-dc561c70d1f2.png)
 
@@ -58,7 +61,8 @@ The patient has one method to pay with "cash”.
 ![System Architecture](https://user-images.githubusercontent.com/101527083/219721055-397ce5bb-15c2-4239-949a-7ef421846730.PNG)
 
 
-### Activity diagram 
+### Activity diagram
+The aim of the activity diagram is to explain all the activities of the whole system. Activity means any function provided by the system shuch as (Add- Delete- Pay - Update - Search ...). 
 
 ![activity drawio](https://user-images.githubusercontent.com/101527083/219741572-7ba34e30-e74c-42e1-aa46-1f34c67a47ea.png)
 
@@ -66,23 +70,32 @@ The patient has one method to pay with "cash”.
 
 
 ### Use cases diagram 
+The main idea of use cases is to simplify the connection between the useres and programmers regarding what the customer needs and what the programer should implement in the system. It has include and extend relations to know the exceptions and handling the errors.
 
 ![use-case](https://user-images.githubusercontent.com/101527083/219722227-8e80d135-da16-44a5-9022-c637ad4fd4c6.png)
 
 
 ### Class diagram based on activity diagram and use cases 
 
+The class diagram is so important in categorizing the system parts in an organized way. This helps to minimize the lines of codes by inheritance between the parent classes and child classes. For instance, instead of repeating a block of code for admin (doctor) and users(pharmacists) with a slight difference between both of them, we can make a parent class the has the abstraction of the main functions and extract two child classes from it. This is the main concept of `OOP(Object Oriented Programming)`
+
 ![Capture](https://user-images.githubusercontent.com/101527083/219723734-4f5925b2-2efb-4e77-876a-7382974e8c70.PNG)
 
-### Class diagram based on interaction diagrams based on (sequence diagram and collaboration — communication — diagram)
-
+### Class diagram based on interaction diagrams (sequence diagram and collaboration — communication — diagram)
+There is a difference between the class diagram based on interaction diagrams and class diagram based on activity diagram and use cases. The one that based on the interaction diagram is more organized, specific after finishing a large part of technical coding journey and summarized.
 ![image](https://user-images.githubusercontent.com/101527083/219741951-77ebe1e6-b08d-47c9-8c98-455b3a34849b.png)
 
 
 ### Object diagram 
+
+the object diagram demonstrates the interactions between the objects.
 ![Object](https://user-images.githubusercontent.com/101527083/219724398-120727db-c1da-4153-bebe-17e666379158.jpeg)
 
 ### state machince diagram 
+
+The state machine diagram explains well every state in the system. The state has Do aspect which is the action done by the system user and a rounded rectangle to show the result of this action.
+The images below shows the state machine diagrams of the main parts of the system. 
+
 ![STATE DIAGRAM png](https://user-images.githubusercontent.com/101527083/219739906-eda7e2e7-1768-4edb-8f31-5c4de1267809.png)
 
 ![STATE DIAGRAM drawio (1)](https://user-images.githubusercontent.com/101527083/219739968-485ebb80-4e29-46ac-a169-2352b81c2dd9.png)
@@ -90,11 +103,14 @@ The patient has one method to pay with "cash”.
 ![STATE DIAGRAM drawio (2)](https://user-images.githubusercontent.com/101527083/219740003-7fe6c179-8023-453f-aa2b-fd8adc7f7aab.png)
 
 ### Package diagram 
+The package diagram clarifies the interactions between the classes and connections. Each class diagram is included into the package diagram with its methods and attributes in a hidden way. 
 
 ![image](https://user-images.githubusercontent.com/101527083/219742123-7260d782-d1a3-4314-bae4-df315cebb800.png)
 
 
 ### Deployment diagram 
+
+The deployment diagram shows the hardware parts of the system in details.
 
 ![image](https://user-images.githubusercontent.com/101527083/219742294-4ad9ce5b-99b1-43a7-83ae-ed2c55c2577d.png)
 
@@ -111,6 +127,8 @@ The database was collected manually with credits was earned by Dr. Ahmed yahia p
 
 
 ### ER diagram 
+
+It shows the primary key which is reference number and secondary key which is the medicine name. It is required for any system whether it has a website interface or not. The primary key is the reference number because it is unique for each medicine and has no repeatitions.  
 
 ![image](https://user-images.githubusercontent.com/101527083/219743677-4cf34e6f-2bb9-4936-838b-6764ce3ff856.png)
 
