@@ -1,4 +1,5 @@
-# import necessary packages 
+# import necessary packages and libraries 
+
 import random
 from tkinter import ttk, messagebox
 import sqlite3
@@ -9,15 +10,20 @@ import tkinter as tk
 from pdf import pdf
 #from ask import Payement 
 
+#The main class of the system
 class Pharmacy:
+    #the constructor of the class
     def __init__(self, root):
         self.root = root
+        #setting the name of the system by Tkinter library
         self.root.title("Pharm.B (Pharmacy Builder)")
+        
+        #setting the dimensions of the system 
         self.root.geometry("1350x800+0+0")
         self.root.resizable(False, False)
         self.root.iconbitmap(r"./doc.ico")
 
-        
+        #setting the variables of the system 
         self.ref_variable = StringVar()
         self.addmed_variable = StringVar()
 
@@ -39,7 +45,7 @@ class Pharmacy:
         self.search_by = StringVar()
         self.search_txt = StringVar()
 
-        #style of the title text
+        #setting the style of the title text
         self.txt = "Pharm.B (Builder of Pharmacy)"
         self.count = 0
         self.text = ""
@@ -50,7 +56,7 @@ class Pharmacy:
         
         self.heading_color()
 
-        #logo label text style 
+        #setting the logo label text style 
         img1 = Image.open(r"./logo.png")
         img1 = img1.resize((70, 45), Image.ANTIALIAS)
         self.photoimg1 = ImageTk.PhotoImage(img1)
@@ -58,16 +64,16 @@ class Pharmacy:
                     borderwidth=0, bg='dodgerblue4')
         b1.place(x=15, y=8)
 
-        #the top frame style
+        #the top frame style has a specific dimension
         topframe = Frame(self.root, bg='aliceblue', bd=10, relief=RIDGE, padx=20)
         topframe.place(x=0, y=62, width=1350, height=400)
 
-        ########  down button frame #######
+        #down button frame  style and dimensions
         down_buttonframe = Frame(
             self.root, bg='dodgerblue4', bd=10, relief=RIDGE, padx=20)
         down_buttonframe.place(x=0, y=462, width=1350, height=60)
 
-            ###### all buttons ######
+        #The buttons styles and dimensions 
         add_button = Button(down_buttonframe, text="Add Medicine", command=self.addmedicine, font=(
             "arial", 12, "bold"), width=14, fg="black", bg="aliceblue", bd=3, relief=RIDGE, activebackground="aliceblue", activeforeground="white")
         add_button.grid(row=0, column=0)
@@ -110,14 +116,14 @@ class Pharmacy:
                              width=10, bd=3, relief=RIDGE, activebackground="black", activeforeground="white", command=self.fetch_new)
         show_button.grid(row=0, column=9)
 
-        ######## left small frame #######
+        #left small frame that is a temporary data section for registeration
         left_smallframe = LabelFrame(topframe, bg='dodgerblue4', bd=10, relief=RIDGE,
                                      padx=20, text="Medicine Information", font=("arial", 13, "bold"), fg="white")
         left_smallframe.place(x=0, y=5, width=820, height=350)
 
-           #### labeling & entry box #########
+        #labeling and entry box of the icons
 
-        # 1
+        # 1 the reference label of the medicine with its function
 
         ref_label = Label(left_smallframe, text="Reference No. :", padx=2, pady=4, font=(
             "times new roman", 13, "bold"), bg="dodgerblue4",fg='white')
@@ -134,7 +140,7 @@ class Pharmacy:
         self.ref_combo.grid(row=0, column=1)
         self.ref_combo.current(0)
 
-        # 2
+        # 2 the comapny name label functions of the input 
 
         company_label = Label(left_smallframe, text="Company Name  :", padx=2, pady=4, font=(
             "times new roman", 13, "bold"), bg="dodgerblue4", fg='white')
@@ -144,7 +150,7 @@ class Pharmacy:
             "times new roman", 13, "bold"), fg="black", bg="white")
         self.company_entry.grid(row=1, column=1)
 
-        # 3
+        # 3 the type label with its functions and styles 
         type_label = Label(left_smallframe, text="Type Of Medicine :", padx=2, pady=4, font=(
             "times new roman", 13, "bold"), bg="dodgerblue4",fg='white')
         type_label.grid(row=2, column=0, sticky=W)
@@ -156,7 +162,7 @@ class Pharmacy:
         self.type_combo.grid(row=2, column=1)
         self.type_combo.current(0)
 
-        # 4
+        # 4 the medicine name label with its functions and styles 
 
         medname_label = Label(left_smallframe, text="Medicine Name :", padx=2, pady=4, font=(
             "times new roman", 13, "bold"), bg="dodgerblue4",fg='white')
@@ -173,7 +179,8 @@ class Pharmacy:
         self.medname_combo.grid(row=3, column=1)
         self.medname_combo.current(0)
 
-        # 5
+        # 5 the lot number label with its functions and styles 
+        # lot number means the cycle that the medicine was attached with 
 
         lot_label = Label(left_smallframe, text=" Lot No. :", padx=2, pady=4, font=(
             "times new roman", 13, "bold"), bg="dodgerblue4",fg='white')
