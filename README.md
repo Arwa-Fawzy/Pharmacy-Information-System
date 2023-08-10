@@ -1,4 +1,4 @@
-# Pharm.B System (Builder of Pharmacy)
+#  Pharm.B System (Builder of Pharmacy)
 Pharm.D is known as Doctor of pharmacy among all medicine universities. The pharmacy information system name and logo was inspired from this idea to simulate the database manegement system as Builder of Pharmacy as shown:
 
 ![logo](https://user-images.githubusercontent.com/101527083/219718133-340b48a5-80e4-420f-a492-df5d4fb10c0f.png)
